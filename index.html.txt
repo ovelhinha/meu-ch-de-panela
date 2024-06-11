@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Panela - Buchi e Noiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chá de Panela</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#gifts">Presentes</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindos ao nosso Chá de Panela!</h2>
+            <img src="noivo.jpg" alt="Noivo" class="profile-pic">
+            <img src="noiva.jpg" alt="Noiva" class="profile-pic">
+            <p>Buchi & [Nome da Noiva]</p>
+            <p>Estamos muito felizes em compartilhar este momento especial com vocês.</p>
+        </section>
+        <section id="gifts">
+            <h2>Escolha um Presente</h2>
+            <form id="emailForm">
+                <label for="email">Informe seu endereço de email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Registrar Email</button>
+            </form>
+            <div id="giftsSection" style="display:none;">
+                <div class="gift">
+                    <img src="presente1.jpg" alt="Presente 1">
+                    <p>Descrição do Presente 1</p>
+                    <button onclick="chooseGift('Presente 1')">Escolher</button>
+                </div>
+                <div class="gift">
+                    <img src="presente2.jpg" alt="Presente 2">
+                    <p>Descrição do Presente 2</p>
+                    <button onclick="chooseGift('Presente 2')">Escolher</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Buchi e [Nome da Noiva]</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

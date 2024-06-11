@@ -1,0 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const emailForm = document.getElementById('emailForm');
+    emailForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        localStorage.setItem('email', email);
+        alert('Email registrado: ' + email);
+        emailForm.style.display = 'none';
+        document.getElementById('giftsSection').style.display = 'block';
+    });
+});
+
+function chooseGift(giftName) {
+    const email = localStorage.getItem('email');
+    if (email) {
+        alert('Obrigado, ' + email + '! Você escolheu ' + giftName + '.');
+    } else {
+        alert('Por favor, registre seu email primeiro.');
+    }
+}
